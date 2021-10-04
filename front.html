@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merch landing</title>
+    <link rel="stylesheet" href="front.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"> </div>
+        <header>
+            <a href="#"><img src="img/or-logo.png" class="logo" alt=""""></a>
+
+            <img src="img/torn-header.png" class="torn-header">
+
+            <ul class="navigation">
+                <li><a href="index.html">Music</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="home.html">Store</a></li>
+            </ul>
+
+            <div class="toggle" onclick="toggleMenu();"></div>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>Olivia Merch <br> is <span>out now</span></h2>
+                <p>Get the limited renditions of ‘drivers license’artist merch now. 
+                </p>
+
+                <a href="#">Get all</a>
+            </div>
+
+            <div class="imgBox floating">
+                <img src="img/sour-tote.jpg"  class="main-img">
+            </div>
+
+            <ul class="thumb">
+                <li><img src="img/sour-bracelet.jpg" onclick="imgSlider('img/sour-bracelet.jpg');changeCircleColor('#C9C0DB') "></li>
+                <li><img src="img/sour-tote.jpg" onclick="imgSlider('img/sour-tote.jpg');changeCircleColor('#A94A8A') "> </li>
+                <li><img src="img/sour-hood.jpg" onclick="imgSlider('img/sour-hood.jpg');changeCircleColor('#B0A5DF') "></li>
+            </ul>
+
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="instagram.png" alt=""></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.main-img').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        
+        function toggleMenu(){
+            var menuToggle= document.querySelector('.toggle');
+            var navigation= document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
