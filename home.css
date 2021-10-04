@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manjari&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charm&family=Manjari&display=swap");
+
+* {
+    font-family: "Righteous", cursive;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 6px;
+    width: 97%;
+    background-color: rgb(189, 177, 255);
+    height: 100px;
+    display: flex;
+    border-radius: 50px;
+    align-self: center;
+    z-index: 10;
+    position: fixed;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+header ul li {
+    padding: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.sour-logo {
+    max-width: 100px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.menu-list {
+    z-index: 10;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+    justify-content: space-between;
+}
+
+.main {
+    flex: 3;
+    margin-left: 30px;
+    margin-right: 60px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding-bottom: 40px;
+}
+
+.sidebar {
+    flex: 1;
+    margin-left: 40px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-family: "Manjari", sans-serif;
+    position: relative;
+}
+
+.main h1 {
+    font-size: 64px;
+    margin-left: 30px;
+    line-height: 200%;
+    position: relative;
+    font-family: "Charm", cursive;
+}
+
+.sidebar h3 {
+    line-height: 110%;
+    padding: 20px;
+    height: max-content;
+}
+
+.main h1:before {
+    content: "";
+    height: 90%;
+    width: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+    align-self: center;
+    top: 10px;
+    background-color: rgb(240 237 255);
+    border-radius: 60px;
+    transition: 0.2s;
+    z-index: -1;
+}
+.main h1:hover::before {
+    width: 90%;
+    left: 0;
+    right: auto;
+}
+
+.main h6 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+    margin: 20px 0px 0px 30px;
+}
+
+.accordion {
+    margin: 20px 20px 10px 20px;
+    background-color: rgb(240 237 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border-radius: 21px;
+    border: 1px hidden black;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+
+    box-shadow: 0px 0px 35px rgb(227, 222, 255);
+}
+
+.active,
+.accordion:hover {
+    background-color: #fff;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    margin-left: 40px;
+    font-family: "Manjari", sans-serif;
+}
+
+.track-item {
+    position: relative;
+    margin-left: 50px;
+    margin-top: 30px;
+    align-content: center;
+}
+
+.track-item img {
+    border-radius: 40px;
+    width: 200px;
+}
+
+.track-item h3 {
+    font-family: "Charm", cursive;
+    font-size: 1.5em;
+}
+
+.track-item .vertical-text {
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 100px;
+    left: -40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40px;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.track-item .ear-ico {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    width: 16px;
+}
+
+footer {
+    background-color: rgb(189, 177, 255);
+    border-radius: 50px 50px 0px 0px;
+    margin: 100px 40px 0px;
+    padding-bottom: 250px;
+    align-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+footer h3 {
+    position: absolute;
+    left: 355px;
+    top: 50px;
+}
+
+footer img {
+    margin-inline: 100px;
+    width: 500px;
+    position: absolute;
+    left: 355px;
+    top: 100px;
+    overflow: hidden;
+}
+
+#all-rights-reserved {
+    width: 300px;
+    transform: rotate(342deg);
+    position: absolute;
+    left: 311px;
+    top: 89px;
+}

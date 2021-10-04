@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Normal HomePage</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <a href="#">
+                <img src="img\sour-logo.png" alt="sour-logo" class="sour-logo">
+            </a>
+            <ul class="menu-list">
+                <li><a href="#">Merch</a></li>
+                <li><a href="#">Stream</a></li>
+                <li><a href="#">About Olivia</a></li>
+            </ul>
+
+        </header>
+
+
+        <div class="wrapper">
+            <aside class="sidebar">
+
+                <div class="inner-sidebar">
+                    
+                <h3>Tracklist</h3>
+                <ul>
+                    <li data-text="Intro"> <a href="#">00 -intro</a></li>
+                    <li data-text="Driver's license"> <a href="#">01 -drivers-license</a></li>
+                    <li data-text="Deja vu"> <a href="#">02 -deja-vu</a></li>
+                    <li data-text="Brutal"> <a href="#">03 -brutal</a></li>
+                    <li data-text="Good 4 u"> <a href="#">04 -good4u</a></li>
+                </ul>
+            </div>
+            </aside>
+
+           
+
+            <section class="main">
+                <h6>introducing</h6>
+                <h1>Olivia Rodrigo</h1>
+
+                
+
+                <div class="grid-container">
+
+                    <div class="track-item">
+                        <p class="vertical-text">01---</p>
+                        <img src="img\1.png" alt="">
+                        <h3>intro</h3>
+                        <img src="img\ear-icon.svg" alt=""  class="ear-ico">
+                    </div>
+
+                    <div class="track-item">
+                        <p class="vertical-text">02---</p>
+                        <img src="img\2.png" alt="">
+                        <h3>drivers license</h3>
+                        <img src="img\ear-icon.svg" alt="" class="ear-ico">
+                    </div>
+
+                    <div class="track-item">
+                        <p class="vertical-text">03---</p>
+                        <img src="img\3.png" alt="">
+                        <h3>good 4 u</h3>
+                        <img src="img\ear-icon.svg" alt="" class="ear-ico">
+                    </div>
+
+                    <div class="track-item">
+                        <p class="vertical-text">04---</p>
+                        <img src="img\4.png" alt="">
+                        <h3>brutal</h3>
+                        <img src="img\ear-icon.svg" alt="" class="ear-ico">
+                    </div>
+
+                    <div class="track-item">
+                        <p class="vertical-text">05---</p>
+                        <img src="img\5.png" alt="">
+                        <h3>deja vu</h3>
+                        <img src="img\ear-icon.svg" alt="" class="ear-ico">
+                    </div>
+
+                    <div class="track-item">
+                        <p class="vertical-text">06---</p>
+                        <img src="img\6.png" alt="">
+                        <h3>traitor</h3>
+                        <img src="img\ear-icon.svg" alt="" class="ear-ico">
+                    </div>
+                </div>
+
+                <button class="accordion">Who is she?</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </section>
+
+            
+        </div>
+
+        <footer>
+            <img src="img\all-rights-reserved.svg" alt="" id="all-rights-reserved">
+            <img src="img\sour-logo.png" alt="sour-logo" >
+        </footer>
+
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
